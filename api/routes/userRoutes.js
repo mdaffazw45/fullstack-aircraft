@@ -11,7 +11,7 @@ router.post('/register', userController.registerUser);
 router.post('/login', userController.loginUser);
 
 // // Protected routes that require user authentication
-router.get('/' ,  authenticate, authorizeAdmin, userController.getAllUsers);
+router.get('/' ,  userController.getAllUsers);
 router.get('/:id', authenticate, userController.getUserById);
 router.put('/:id',  userController.updateUser);
 router.put('/forgotPassword/:email', userController.forgotPassword); // New route for forgot password

@@ -83,7 +83,7 @@ exports.loginUser = async (req, res) => {
     }
     // Generate and send a JWT token
     const token = generateUserAuthToken(modifiedUser);
-    res.status(200).json({ message: 'Authentication successful', token });
+    res.status(200).json({ message: 'Authentication successful', token, role: 'user' });
   } catch (error) {
     console.error(error);
     res.status(500).json({ message: 'Internal Server Error' });

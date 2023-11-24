@@ -16,3 +16,4 @@ router.put('/forgotPassword/:email', adminController.forgotPassword); // New rou
 router.delete('/:id', adminController.deleteAdmin);
 
 module.exports = router;
+    

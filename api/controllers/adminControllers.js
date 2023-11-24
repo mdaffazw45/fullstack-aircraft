@@ -91,7 +91,7 @@ exports.loginAdmin = async (req, res) => {
     // Generate and send a JWT token
     console.log(modifiedAdmin , 'modifiedAdmin')
     const token = generateAdminAuthToken(modifiedAdmin);
-    res.status(200).json({ message: 'Authentication successful', token });
+    res.status(200).json({ message: 'Authentication successful', token, role: 'admin' });
   } catch (error) {
     console.error(error);
     res.status(500).json({ message: 'Internal Server Error' });
