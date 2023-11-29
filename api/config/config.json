@@ -1,20 +1,20 @@
 {
   "development": {
-    "username": "",
+    "username": "root",
     "password": "",
-    "database": "database_fullstack_development",
+    "database": "database_fullstack_development_guiz",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "test": {
-    "username": "",
+    "username": "root",
     "password": "",
-    "database": "database_fullstack_test",
+    "database": "database_fullstack_test_guiz",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "production": {
-    "username": "",
+    "username": "root",
     "password": "",
     "database": "database_fullstack_production",
     "host": "127.0.0.1",
